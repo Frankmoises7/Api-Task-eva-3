@@ -9,7 +9,7 @@ taskRoutes.get('/', tokenValidator(), controller.getAll)
 taskRoutes.get('/:id', controller.getById)
 
 taskRoutes.post('/create', controller.create)
-taskRoutes.put('/update-task/:id', controller.update)
+taskRoutes.put('/update/:id', controller.update)
 taskRoutes.post('/delete/:id', controller.delete)
 
 export default taskRoutes
