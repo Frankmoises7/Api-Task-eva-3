@@ -10,6 +10,6 @@ taskRoutes.get('/:id', controller.getById)
 
 taskRoutes.post('/create', controller.create)
 taskRoutes.put('/update/:id', controller.update)
-taskRoutes.post('/delete/:id', controller.delete)
+taskRoutes.delete('/delete/:id', controller.delete)
 
 export default taskRoutes
