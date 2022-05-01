@@ -123,7 +123,7 @@ export default class TaskController {
 
       await repository.delete(parseInt(id))
 
-      res.status(204).json({ message: 'Task elimited'})
+      res.status(202).json({ message: 'Task elimited' })
     } catch (error) {
       console.log(error)
       res.status(500).json({ message: 'Something went wrong' })
