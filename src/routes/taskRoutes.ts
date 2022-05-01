@@ -8,7 +8,7 @@ const controller = new TaskController()
 taskRoutes.get('/', tokenValidator(), controller.getAll)
 taskRoutes.get('/:id', controller.getById)
 
-taskRoutes.post('/create-task', controller.create)
+taskRoutes.post('/create', controller.create)
 taskRoutes.put('/update-task/:id', controller.update)
 taskRoutes.post('/delete/:id', controller.delete)
 
